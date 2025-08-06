@@ -148,7 +148,75 @@ nav{
 header{
     margin-top: 5rem;
     padding-inline: 1rem;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
 }
+
+header::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: calc(100% - 2rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(Images/Header-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    z-index: -1;
+}
+
+.header_container{
+    display: grid;
+}
+
+.header_content{
+    padding: 4rem 1rem;
+}
+
+.header_content p{
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.header_content h1{
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    line-height: 5.5rem;
+    text-align: center;
+}
+
+.header_btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;}
+
+    .header_btns .btn{
+        padding: 1rem 2rem;
+    }
+
+.header_btns a{
+    padding: 9px 13px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: var(--white);
+    border-radius: 100%;
+}
+
+.header_btns a:hover{
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
 
 @media(width > 768px){
     nav{
