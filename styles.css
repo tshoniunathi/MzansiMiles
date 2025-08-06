@@ -249,7 +249,8 @@ header::before{
         width: fit-content;
         padding: 0;
         flex-direction: row;
-        background-color: transparent;transform: none !important;
+        background-color: transparent;
+        transform: none !important;
     }
 
     .nav_links a{
@@ -274,4 +275,6 @@ header::before{
         padding: .75rem 2rem;
         background-color: var(--text-dark);
     }
+
+   
 }
