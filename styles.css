@@ -299,4 +299,20 @@ header::before{
    .header_btns{
     justify-content: flex-start;
    }
+   
+   .header_img{
+    grid-column: 4/8;
+    position: relative;
+    isolation: isolate;
+    height: 100%;
+   }
+
+   .header_img img{
+    position: absolute;
+    top: -7rem;
+    left: -3rem;
+    height: 100%;
+    width: unset;
+   }
+
 }
