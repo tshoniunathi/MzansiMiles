@@ -295,4 +295,8 @@ header::before{
    .header_content :is(p, h1){
     text-align: left;
    }
+
+   .header_btns{
+    justify-content: flex-start;
+   }
 }
