@@ -276,5 +276,23 @@ header::before{
         background-color: var(--text-dark);
     }
 
-   
+   header {
+    margin-top: 0;
+   }
+    
+   .header_container{
+    grid-template-columns: 
+    minmax(0, 1fr)
+    repeat(5, minmax(0, calc(var(--max-width) /5)))
+    minmax(0, 1fr);
+   }
+
+   .header_content{
+    grid-column: 2/4;
+    padding-block: 8rem;
+   }
+
+   .header_content :is(p, h1){
+    text-align: left;
+   }
 }
