@@ -171,10 +171,12 @@ header::before {
 
 .header_container {
   display: grid;
+  min-height: 100vh;
 }
 
 .header_content {
   padding: 4rem 1rem;
+  max-width: 600px;
 }
 
 .header_content p {
@@ -216,6 +218,16 @@ header::before {
 .header_btns a:hover {
   color: var(--white);
   background-color: var(--primary-color);
+}
+
+.section__header {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.section__description {
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 .destination_container :is(.section_header, .section_description) {
@@ -362,7 +374,6 @@ header::before {
 
   .header_content :is(p, h1) {
     text-align: left;
-    opacity: 0;
   }
 
   .header_btns {

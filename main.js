@@ -42,9 +42,14 @@ sr.reveal(".header_content p", {
 });
 sr.reveal(".header_content h1", {
   ...scrollRevealOption,
-  delay: 1500,
+  delay: 1000,
 });
 sr.reveal(".header_btns", {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 1500,
+});
+
+sr.reveal(".destination_card", {
+  ...scrollRevealOption,
+  interval: 500,
 });
