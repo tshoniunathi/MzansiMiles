@@ -220,12 +220,12 @@ header::before {
   background-color: var(--primary-color);
 }
 
-.section__header {
+.section_header {
   margin-top: 2rem;
   margin-bottom: 0;
 }
 
-.section__description {
+.section_description {
   margin-top: 0;
   margin-bottom: 2rem;
 }
@@ -370,8 +370,12 @@ header::before {
   .header_content {
     grid-column: 2/4;
     padding-block: 8rem;
+    padding-inline: 2rem;
   }
 
+  .header_content h1 {
+    font-size: 3rem;
+  }
   .header_content :is(p, h1) {
     text-align: left;
   }
