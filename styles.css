@@ -292,8 +292,83 @@ header::before {
   background-color: var(--primary-color-dark);
 }
 
+.journey_grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 0 1rem;
+}
+
+.journey_card {
+  position: relative;
+  isolation: isolate;
+  padding-top: 4rem;
+  overflow: hidden;
+}
+
+.journey_card_bg {
+  padding: 2rem;
+  background-color: var(--extra-light);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.journey_card_bg span {
+  display: inline-block;
+  margin-bottom: 4rem;
+  font-size: 1.75rem;
+  color: var(--primary-color);
+}
+
+.journey_card_bg h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.journey_card_content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  transition: 0.3s;
+}
+
+.journey_card:hover .journey_card_content {
+  top: 0;
+}
+
+.journey_card_content span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 7px 9px;
+  font-size: 1rem;
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 100%;
+}
+
+.journey_card_content h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.journey_card_content p {
+  color: var(--extra-light);
+}
+
 @media (width > 540px) {
   .destination_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .journey_grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -400,6 +475,9 @@ header::before {
   }
 
   .destination_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .journey_grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
