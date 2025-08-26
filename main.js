@@ -53,3 +53,22 @@ sr.reveal(".destination_card", {
   ...scrollRevealOption,
   interval: 500,
 });
+
+// Use it on elements
+sr.reveal(".showcase_image img", {
+  ...scrollRevealOption,
+  origin: "left",
+});
+sr.reveal(".showcase_content h4", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+sr.reveal(".showcase_content p", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+
+sr.reveal(".showcase_btn", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
