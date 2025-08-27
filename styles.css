@@ -400,6 +400,29 @@ header::before {
   border-radius: 5px;
 }
 
+.banner_container {
+  display: grid;
+  gap: 2rem;
+}
+
+.banner_card {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--extra-light);
+  border-radius: 2rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.banner_card h4 {
+  font-size: 5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.banner_card p {
+  color: var(--text-light);
+}
+
 @media (width > 540px) {
   .destination_grid {
     grid-template-columns: repeat(2, 1fr);
@@ -412,6 +435,10 @@ header::before {
   .showcase_container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+
+  .banner_container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -524,10 +551,14 @@ header::before {
   }
 
   .showcase_container {
-    grid-template-columns: repeat(3.1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .showcase_content {
     grid-column: 2/4;
+  }
+
+  .banner_container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
