@@ -72,3 +72,8 @@ sr.reveal(".showcase_btn", {
   ...scrollRevealOption,
   delay: 1500,
 });
+
+sr.reveal(".banner_card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
