@@ -78,16 +78,13 @@ sr.reveal(".banner_card", {
   interval: 500,
 });
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
+sr.reveal(".discover_card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
   spaceBetween: 20,
   loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 });
