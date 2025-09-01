@@ -503,8 +503,8 @@ header::before {
   gap: 1rem;
 }
 .client_details img {
-  max-height: 50px;
-  max-width: 50px;
+  max-height: 40px;
+  max-width: 40px;
   border-radius: 100%;
 }
 
