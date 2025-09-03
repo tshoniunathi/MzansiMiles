@@ -526,6 +526,72 @@ header::before {
   transition: 0.3s;
 }
 
+footer {
+  background-color: var(--extra-light);
+}
+
+.footer_container {
+  display: grid;
+  gap: 4rem 2rem;
+}
+
+.footer_col p {
+  max-width: 300px;
+  margin-block: 2rem;
+  color: var(--text-light);
+}
+
+.footer_socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer_socials a {
+  display: inline-block;
+  padding: 7px 10px;
+  font-size: 1.25rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 100%;
+}
+
+.footer socials a:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.footer_col h4 {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.footer_links {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer_links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-light);
+}
+
+.footer_links a:hover {
+  color: var(--primary-color);
+}
+
+.footer_links a span {
+  font-size: 1.25rem;
+}
+
+.footer_col form {
+  display: grid;
+  gap: 1rem;
+}
 @media (width > 540px) {
   .destination_grid {
     grid-template-columns: repeat(2, 1fr);
